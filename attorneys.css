@@ -46,51 +46,64 @@ header > div#header > div.links a:hover {
   font-weight: bold;
 }
 
-div#landing-image {
-  width: 100%;
-  margin-top: 84px;
-}
-
-#landing-image > img {
-  width: 100%;
+div#bio-container {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-div.block {
-  height: 400px;
+div.panels {
+  width: 80%;
+  height: 70%;
+/*  border: 1px solid blue;*/
+  display: flex;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+div.panel {
+  border: 1px solid red;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-div.block > h1 {
   text-align: center;
-  font-size: 50px;
-  letter-spacing: 2px;
-  margin: 0;
+  transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+  overflow: hidden;
 }
 
-div.block > p {
-  text-align: center;
-  margin: 50px;
-  font-size: 18px;
-  font-family: 'Andada', serif;
-  letter-spacing: 1.5px;
-  line-height: 200%;
-}
-
-div#services {
-  background-color: #333A56;
-  color: white;
-}
-
-footer {
-  background-color: #C0C0C0;
+.headshot {
   height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 200px;
+  border: 1px solid pink;
 }
 
+.panel > * {
+  transition:transform 0.5s;
+}
+
+.panel.open {
+/*  font-size:40px;*/
+  flex: 5;
+}
+
+.panel > *:first-child {
+  transform: translateY(-500%);
+}
+
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+
+.panel > *:last-child {
+  transform: translateY(200%);
+}
+
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
