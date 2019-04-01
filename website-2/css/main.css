@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
-  font-family: 'Open Sans Condensed', sans-serif;;
+  font-family: 'Playfair Display', serif;
 }
 
 .no-flick{-webkit-transform:translate3d(0,0,0);}
@@ -83,7 +83,7 @@ body, html {
 .navbar-header .logo a {
   color: #000000;
   text-decoration: none;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 25px;
   line-height: 25px;
 }
@@ -97,7 +97,8 @@ body, html {
 }
 
 .navbar-nav ul li a {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   color: #777;
   text-decoration: none;
   font-size: 23px;
@@ -162,7 +163,7 @@ body, html {
 
 .border {
   background-color: transparent;
-  font-size: 25px;
+  font-size: 38px;
   color: #f7f7f7;
 }
 
@@ -173,7 +174,7 @@ body, html {
   padding: 18px;
   font-size: 25px;
   letter-spacing: 7px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 
@@ -213,7 +214,7 @@ h3 {
   line-height: 30px;
   color: #777;
   text-decoration: none;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
 }
 
@@ -243,7 +244,7 @@ h3 {
 }
 
 .bio p, .work-container div p {
-  font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   line-height: 20px;
   font-size: 14px;
@@ -269,6 +270,18 @@ h3 {
 .work-container div p {
   padding: 0;
   margin: 0;
+}
+
+.footer p {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 
